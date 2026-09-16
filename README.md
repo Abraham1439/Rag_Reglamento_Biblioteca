@@ -188,6 +188,7 @@ print("Fuentes:", resultado["fuentes"])
 ```
 
 Las técnicas disponibles son `zero-shot`, `few-shot` y `chain-of-thought`.
+La técnica seleccionada para el funcionamiento habitual es `zero-shot`, que también es el valor por defecto de `agent.answer()`. Las otras variantes se conservan como alternativas utilizadas en pruebas exploratorias. El notebook entregado no contiene resultados comparativos registrados.
 
 El `score` es una medida de similitud calculada a partir de la distancia del resultado recuperado; **no representa una probabilidad de que la respuesta sea correcta**. Las fuentes corresponden a los archivos recuperados y deben contrastarse con la respuesta.
 
