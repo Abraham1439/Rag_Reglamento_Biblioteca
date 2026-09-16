@@ -70,7 +70,7 @@ El entorno virtual mantiene las dependencias del proyecto separadas de las de ot
 
 ```powershell
 py -m venv .venv
-.\.venv\Scripts\Activate.ps1
+.venv\Scripts\activate
 ```
 
 Si `py` no está disponible, utiliza `python -m venv .venv`.
@@ -96,26 +96,14 @@ La ruta debe apuntar a la carpeta `.venv` del proyecto.
 Con el entorno activado, ejecuta:
 
 ```bash
-python -m pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 ### 4. Configurar las claves API
 
 Copia el archivo de ejemplo en la raíz del proyecto:
 
-**Windows (PowerShell):**
-
-```powershell
-Copy-Item .env.example .env
-```
-
-**Windows (CMD):**
-
-```bat
-copy .env.example .env
-```
-
-**macOS / Linux:**
+**Windows:**
 
 ```bash
 cp .env.example .env
